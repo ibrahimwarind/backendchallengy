@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/upload-attendance', [AttendanceController::class, 'uploadAttendance']);
 Route::get('/attendance/{employee_id}', [AttendanceApiController::class, 'getAttendanceInfo']);
 
+Route::get('/attendance2/{employeeId}', [AttendanceController::class, 'getAttendanceInfo2']);
+
